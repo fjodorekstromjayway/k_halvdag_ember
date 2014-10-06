@@ -1,0 +1,1 @@
+KHalvdagEmber.ApplicationAdapter = DS.FixtureAdapter;
