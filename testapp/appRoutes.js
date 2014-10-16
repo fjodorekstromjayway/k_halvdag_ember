@@ -19,8 +19,8 @@ App.SearchRoute = Ember.Route.extend({
 
 App.MovieRoute = Ember.Route.extend({
 	model: function(params){
-		debugger;
-		return $.getJSON('http://omdbapi.com/?i=' +params)
+		//debugger;
+		return $.getJSON('http://omdbapi.com/?i=' +params.imdbId)
 		.then(function(response){
 			return response;
 		});

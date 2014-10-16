@@ -18,7 +18,7 @@
 			<div class="row-fluid">
 				<ul class="nav nav-list span3 well">
 					{{#each model}}
-						<li>{{#link-to "movie" this}}{{Title}}{{/link-to}}</li>
+						<li>{{#link-to "movie" imdbID}}{{Title}}{{/link-to}}</li>
 					{{/each}}
 				</ul>
 				<div class="span9 well">
@@ -28,16 +28,45 @@
 		</div>
 	</script>
 
-	<script type="text/x-handlebars" id="movies">
+	<script type="text/x-handlebars" id="movie">
 		<h2>
 			{{Title}} {{Type}}
 			<img {{bind-attr src="avatar"}} class="pull-right" width=50 />
 		</h2>
+		<img {{bind-attr src=Poster}} alt="poster.jpeg"></img>
 		<dl>
-			<dt>First</dt>
+			<dt>Title</dt>
 			<dd>{{Title}}</dd>
-			<dt>Last</dt>
+			<dt>Type</dt>
 			<dd>{{Type}}</dd>
+			<dt>Year</dt>
+			<dd>{{Year}}</dd>
+			<dt>Rated</dt>
+			<dd>{{Rated}}</dd>
+			<dt>Released</dt>
+			<dd>{{Released}}</dd>
+			<dt>Runtime</dt>
+			<dd>{{Runtime}}</dd>
+			<dt>Genre</dt>
+			<dd>{{Genre}}</dd>
+			<dt>Director</dt>
+			<dd>{{Director}}</dd>
+			<dt>Writer</dt>
+			<dd>{{Writer}}</dd>
+			<dt>Actors</dt>
+			<dd>{{Actors}}</dd>
+			<dt>Plot</dt>
+			<dd>{{Plot}}</dd>
+			<dt>Language</dt>
+			<dd>{{Language}}</dd>
+			<dt>Country</dt>
+			<dd>{{Country}}</dd>
+			<dt>Awards</dt>
+			<dd>{{Awards}}</dd>
+			<dt>IMDB Rating</dt>
+			<dd>{{imdbRating}}</dd>
+			<dt>IMDB Votes</dt>
+			<dd>{{imdbVotes}}</dd>
 		</dl>
 	</script>
 </body>
